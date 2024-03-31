@@ -35,7 +35,7 @@ To adapt YOLOv8 pretrained weights on the Chaotic World dataset, we need to orga
 ## Infer to get annotation file
 It needs to be emphasised that the annotation file `.pkl` is necessary for our final results. You can get the `.pkl` file format annotation from the trained YOLOv8 weights provided as follow, or you can directly use the **cw_test_yolov8_on_cw_0.3.pkl** we provided as object detection result detected from this YOLOv8n weight. It is provided in [`Google Drive`](https://drive.google.com/drive/folders/1ktWZzT6eU83IodbxMksu1R6FW619zB--?usp=sharing).
 
-When using detect_cw_yolov8.py for inference, several key parameters need to be provided. Here is an explanation of the parameters:
+When using `detect2pkl.py` for inference, several key parameters need to be provided. Here is an explanation of the parameters:
 
 - **ckpt_path**: The trained weights of YOLO series models, or you can directly used our YOLOv8n weight trained on the Chaotic World training dataset.
 - **csv_path**: We use this file to find the paths of key images for inference. The format of this file should follow the official `chaos_test_1fps.csv` provided.
