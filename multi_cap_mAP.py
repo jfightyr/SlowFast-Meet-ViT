@@ -121,7 +121,6 @@ def evaluate_cap(cap, predict):
     return cap, mAP
 
 
-# if __name__ == '__main__':
 def cal_cap_map(predict_csv,result_txt,cap_range):
     mAPs = []
     caps = []
@@ -151,3 +150,32 @@ def cal_cap_map(predict_csv,result_txt,cap_range):
         file.write(f"cap:{max_caps},max_mAP:{max_mAP}\n")
         print(f"cap:{max_caps},mAP:{max_mAP}")
     return max_mAP,max_caps
+
+if __name__ == '__main__':
+    predict_csv = r'predict_epoch_final.csv'   # or gt:predict_epoch_gt.csv 
+    result_txt = r"predict_epoch.txt"
+
+    mAPs = []
+    caps = []
+    caps = [i for i in range(50, 2200)]
+
+    print("Num of CPU: ", os.cpu_count())
+    with Pool(processes=os.cpu_count()) as pool:
+        results = pool.map(evaluate_cap, caps)
+
+    for res in results:
+        cap, mAP = res[0], res[1]
+        caps.append(cap)
+        mAPs.append(mAP)
+
+        with open(result_txt, "a") as file:
+            file.write(f"cap: {cap}, mAP: {mAP}\n")
+            print("cap: %d | mAP: %f" % (cap, mAP))
+
+    max_mAP = max(mAPs)
+    max_idx = mAPs.index(max_mAP)
+    max_caps = caps[max_idx]
+    
+    with open(result_txt, "a") as file:
+        file.write(f"cap:{max_caps},max_mAP:{max_mAP}\n")
+        print(f"cap:{max_caps},mAP:{max_mAP}")
