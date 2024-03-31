@@ -19,7 +19,7 @@ Some key dependencies are listed below, while others are given in [`requirements
 
 **RESULTS**: 
 - We got up to **26.62%** mAP on the validation set. We trained 12 epochs on 4 GeForce RTX 3090 with batch_size=3/GPU to get this result. Our best mAP results are saved in [our_result/final_result](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/our_result/final_result).
-- If we directly use **chaos_test_1fps.csv** as the results of object detection, the mAP reaches **42.28%**. We trained 7 epochs on 4 GeForce RTX 3090 with batch_size=3/GPU to get this result.Our best mAP results are saved in [our_result/gt_result](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/our_result/gt_result).
+- If we directly use **chaos_test_1fps.csv** as the results of object detection, the mAP reaches **42.28%**. We trained 7 epochs on 4 GeForce RTX 3090 with batch_size=3/GPU to get this result. Our best mAP results are saved in [our_result/gt_result](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/our_result/gt_result).
 - The CSV we predicted can be downloaded from [`Google Drive`](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing ). `predict_epoch_final.csv` corresponds to the result of [our_result/final_result](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/our_result/final_result), and `predict_epoch_gt.csv` corresponds to the result of [our_result/gt_result](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/our_result/gt_result).
 
 
