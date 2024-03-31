@@ -1,0 +1,6 @@
+train: /yolo_format_320_180/images/train
+val: /yolo_format_320_180/images/val
+test: /yolo_format_320_180/images/test
+
+nc: 1
+names: ['person']
