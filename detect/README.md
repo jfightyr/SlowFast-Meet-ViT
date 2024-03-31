@@ -44,7 +44,7 @@ When using `detect2pkl.py` for inference, several key parameters need to be prov
 
 ## Detector Zoo
 We need to mention that our model can achieve superior performance on Ground Truth. If the detector can achieve the same excellent performance, our results will be higher. If you find that your final results are not good, you can re-examine your detector. We provide several detectors that we trained for your convenience, but you are also welcome to use a more accurate person detector if you have one.
-It's worth noting that all training data has been resized to [320, 180] dimensions. Therefore, when inferring annotations, it's best to perform inference using this dimension to avoid getting a very poor result.
+It's worth noting that all training data has been resized to **[320, 180]** dimensions. Therefore, when inferring annotations, it's best to perform inference using this dimension to avoid getting a very poor result.
 Detector | Pre-train dataset | Train dataset | Stable | Recommended Threshold | Best Val mAP 
 --- | :---: | :---: | :---: | :---: | :---: 
 `YOLOv8n` | None | Chaotic World | False | 0.3 | **26.62%** 
