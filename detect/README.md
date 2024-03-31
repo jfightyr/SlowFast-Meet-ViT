@@ -16,27 +16,21 @@ You can easily configure the training environment through [ultralytics](https://
 ## Chaotic World dataset in YOLO Format
 To adapt YOLOv8 pretrained weights on the Chaotic World dataset, we need to organize the Chaotic World dataset into the YOLO data structure for training. The YOLO format dataset is as follows, and you can obtain the corresponding dataset using the `cw_csv2yolo.py` file.
 ```
-   ├── train
-      ├── images
-            ├── videoid1_frameid1.png
-            ├── videoid1_frameid2.png
-      ├── labels
-            ├── videoid1_frameid1.txt
-            ├── videoid1_frameid2.txt
-   ├── valid
-      ├── images
-            ├── videoid1_frameid1.png
-            ├── videoid1_frameid2.png
-      ├── labels
-            ├── videoid1_frameid1.txt
-            ├── videoid1_frameid2.txt
-   ├── test
-      ├── images
-            ├── videoid1_frameid1.png
-            ├── videoid1_frameid2.png
-      ├── labels
-            ├── videoid1_frameid1.txt
-            ├── videoid1_frameid2.txt
+├── ChaoticWorld in YOLO format 
+    ├── images
+        ├── train
+            ├── 1111.jpg
+            ├── 2222.jpg
+        ├── test
+            ├── 1111.jpg
+            ├── 2222.jpg
+    ├── labels
+        ├── train
+            ├── 1111.txt
+            ├── 2222.txt
+        ├── test
+            ├── 1111.txt
+            ├── 2222.txt
 ```
 ## Infer to get annotation file
 It needs to be emphasised that the annotation file `.pkl` is necessary for our final results. You can get the `.pkl` file format annotation from the trained YOLOv8 weights [yolov8n_cw_epoch200.pt](https://drive.google.com/drive/folders/1ktWZzT6eU83IodbxMksu1R6FW619zB--?usp=sharing ). Or you can directly use the **cw_test_yolov8_on_cw_0.3.pkl** we provided as object detection result detected from this YOLOv8n weight. It is provided in [`Google Drive`](https://drive.google.com/drive/folders/1ktWZzT6eU83IodbxMksu1R6FW619zB--?usp=sharing).
