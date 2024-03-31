@@ -50,7 +50,7 @@ Some key dependencies are listed below, while others are given in [`requirements
     python main.py --config ./configs/VITSF_ACAR_HR2O_CW_train_resume.yaml [--nproc_per_node N_PROCESSES] [--backend BACKEND] [--master_addr MASTER_ADDR] [--master_port MASTER_PORT]
     ```
 - Train/Inference on ground truth：
-  If we directly use officially provided **chaos_test_1fps.csv** as the results of object detection instead of detector , please **follow the comments we wrote** in [`config`](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/configs) and replace `annotation_path`.All other operations are consistent.
+  If we directly use officially provided **chaos_test_1fps.csv** as the results of object detection instead of detector , please **follow the comments we wrote** in [`config`](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/configs) and replace `annotation_path`. All other operations are consistent.
 
 ## Model Introduction
 - We use [ACAR](https://github.com/Siyu-C/ACAR-Net) as the baseline.
