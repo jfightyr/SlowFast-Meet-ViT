@@ -406,9 +406,6 @@ class VisionTransformer(nn.Module):
         self.head.weight.data.mul_(init_scale)
         self.head.bias.data.mul_(init_scale)
         
-        # # added module
-        # self.conv = nn.Conv3d(384, 2304, 1, stride=1)
-        # self.BN = nn.BatchNorm3d(2304)
 
     def _init_weights(self, m):
         if isinstance(m, nn.Linear):
