@@ -451,31 +451,10 @@ class VisionTransformer(nn.Module):
                 x = blk(x)
         # x torch.Size([1, 1568, 768])  base ckpt
         # x torch.Size([2, 4096, 1408]) giant ckpt
-        
-        # for mae2-base
-        # x = x.reshape(x.shape[0], -1, 32, 14, 14)
-        # x torch.Size([1, 384, 32, 14, 14])
 
-        # for mae2-giant
-        # x = x.reshape(x.shape[0], -1, 32, 16, 16)
-        # x torch.Size([1, 704, 32, 16, 16])
-
-        # restore for transformer tensor
+        # restore from transformer tensor
         x = x.transpose(1, 2).reshape(x.shape[0], 1408, 16, 16, 16)
         return x
-        
-        # if self.fc_norm is not None:
-        #     # return self.fc_norm(x.mean(1)) 
-        #     # return self.fc_norm(x) 
-        #     # return self.BN(x)        # x [1, 384, 14, 14]
-        # else:
-        #     return self.norm(x[:, 0])
-
-    # def forward(self, x):
-    #     x = self.forward_features(x)
-    #     x = self.head_dropout(x)
-    #     x = self.head(x)
-    #     return x
 
 
 @register_model
