@@ -14,7 +14,7 @@ You can easily configure the training environment through [ultralytics](https://
  
 
 ## Chaotic World dataset in YOLO Format
-To adapt YOLOv8 pretrained weights on the Chaotic World dataset, we need to organize the Chaotic World dataset into the YOLO data structure for training. The YOLO format dataset is as follows, and you can obtain the corresponding dataset using the `cw_csv2yolo.py` file. Finally, organize your data paths according to the `data.yaml`.
+To adapt YOLOv8 pretrained weights on the Chaotic World dataset, we need to organize the Chaotic World dataset into the YOLO data structure for training. The YOLO format dataset is as follows, and you can obtain the corresponding dataset using the `cw_csv2yolo.py` file. Finally, organize your data paths according to the [`data.yaml`](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/detect/data.yaml).
 ```
 ├── ChaoticWorld in YOLO format 
     ├── images
