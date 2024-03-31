@@ -9,7 +9,7 @@ We decompose the STAL task into two stages: object detection and action recognit
 - data: Due to the relatively limited dataset provided by ChaoticWorld, we recommend pretraining on **AVA v2.2** to ensure the stability of the detector. Please refer to the code for converting the AVA dataset to YOLO format. As for the format conversion of the ChaoticWorld dataset, we will provide that in the following section.
 
 
-You can easily configure the training environment through [ultralytics](https://docs.ultralytics.com/) or directly load our pre-trained weights [yolov8n_cw_epoch200.pt](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing ) for further detection.
+You can easily configure the training environment through [ultralytics](https://docs.ultralytics.com/) or directly load our pre-trained weights [yolov8n_cw_epoch128.pt](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing ) for further detection.
 
  
 
@@ -33,7 +33,7 @@ To adapt YOLOv8 pretrained weights on the Chaotic World dataset, we need to orga
             ├── 2222.txt
 ```
 ## Infer to get annotation file
-It needs to be emphasised that the annotation file `.pkl` is necessary for our final results. You can get the `.pkl` file format annotation from the trained YOLOv8 weights [yolov8n_cw_epoch200.pt](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing). Or you can directly use the **cw_test_yolov8_on_cw_0.3.pkl** we provided as object detection result detected from this YOLOv8n weight. It is provided in [`Google Drive`](https://drive.google.com/drive/folders/1ktWZzT6eU83IodbxMksu1R6FW619zB--?usp=sharing).
+It needs to be emphasised that the annotation file `.pkl` is necessary for our final results. You can get the `.pkl` file format annotation from the trained YOLOv8 weights [yolov8n_cw_epoch128.pt](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing). Or you can directly use the **cw_test_yolov8_on_cw_0.3.pkl** we provided as object detection result detected from this YOLOv8n weight. It is provided in [`Google Drive`](https://drive.google.com/drive/folders/1ktWZzT6eU83IodbxMksu1R6FW619zB--?usp=sharing).
 
 When using detect_cw_yolov8.py for inference, several key parameters need to be provided. Here is an explanation of the parameters:
 
