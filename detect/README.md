@@ -5,7 +5,7 @@ We decompose the STAL task into two stages: object detection and action recognit
 - epoch: 200
 - devices: 2 GeForce RTX 3090
 - batch: Automatic batch processing
-- imgsz: [640, 640]
+- imgsz: [320, 180]
 - data: Due to the relatively limited dataset provided by ChaoticWorld, we recommend pretraining on **AVA v2.2** to ensure the stability of the detector. Please refer to the code for converting the AVA dataset to YOLO format. As for the format conversion of the ChaoticWorld dataset, we will provide that in the following section.
 
 
