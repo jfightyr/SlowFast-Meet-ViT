@@ -46,6 +46,6 @@ When using detect_cw_yolov8.py for inference, several key parameters need to be 
 Detector | Pre-train dataset | Train dataset | Stable | Best Val mAP 
 --- | :---: | :---: | :---: | :---: 
 `YOLOv8n` | None | Chaotic World | False | **26.62%** | 41.07%
-`YOLOv8n` | None | Chaotic World | False | **26.62%** | 41.07%
-`YOLOv8n` | None | Chaotic World | False | **26.62%** | 41.07%
+`YOLOv8n_AVA` | AVA 2.2v | Chaotic World | True | **26.62%** | 41.07%
+`YOLOv9e_AVA` | AVA 2.2v | Chaotic World | True | **26.62%** | 41.07%
 
