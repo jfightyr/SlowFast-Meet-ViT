@@ -43,8 +43,8 @@ When using detect_cw_yolov8.py for inference, several key parameters need to be 
 - **pkl_path**:  The output path for the `.pkl` file.
 
 ## Detector Zoo
-Detector | Pre-train dataset | Train dataset | Stable | Recommended Threshold Best Val mAP 
---- | :---: | :---: | :---: | :---: 
+Detector | Pre-train dataset | Train dataset | Stable | Recommended Threshold | Best Val mAP 
+--- | :---: | :---: | :---: | :---: | :---: 
 `YOLOv8n` | None | Chaotic World | False | 0.3 | **26.62%** 
 `YOLOv8n_AVA` | AVA 2.2v | Chaotic World | True | 0.3 | **26.62%** 
 `YOLOv9e_AVA` | AVA 2.2v | Chaotic World | True | 0.3 |**26.62%** 
