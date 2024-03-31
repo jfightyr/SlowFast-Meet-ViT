@@ -1,4 +1,4 @@
-# ICMEW 2024:Spatiotemporal-Action-Localization-on-Chaotic-World-dataset 
+# [2024 ICME Grand challenge]:Spatiotemporal-Action-Localization-on-Chaotic-World-dataset 
 We have implemented Track # 1 for ICME 2024: Spatial Action Localization on Chaotic World dataset. We decompose the STAL task into two stages: object detection and action recognition. Our mAP on the validation set reaches **26.62%**, and if we directly use officially provided  **chaos_test_1fps.csv** as the results of object detection, the mAP reaches **42.28%**.
 
 
