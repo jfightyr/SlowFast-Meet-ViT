@@ -69,7 +69,7 @@ pkl_path = r"test.pkl"
 
 
 # default config
-img_w, img_h = 640, 640
+img_w, img_h = 320, 180
 threshold = 0.3
 device = 'cpu'
 total = sum(1 for line in open(csv_path))
@@ -119,7 +119,7 @@ if __name__ == '__main__':
             
             img_path = os.path.join(img_root, video_uid + "_%06d.png"%int(frame)) 
 
-            # infering by yolov8    
+            # infering by yolov8, attention: imgsz should be (h, w), or you will get a terrible res. 
             inf_res = model.predict(img_path, imgsz=(img_h,img_w), conf=threshold, device=device)
             inf_boxes = inf_res[0].boxes
 
