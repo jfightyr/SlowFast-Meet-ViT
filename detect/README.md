@@ -6,7 +6,7 @@ We decompose the STAL task into two stages: object detection and action recognit
 - devices: 2 GeForce RTX 3090
 - batch: Automatic batch processing
 - imgsz: [640, 640]
-- data: Due to the relatively limited dataset provided by ChaoticWorld, we recommend pretraining on **AVA v2.2* to ensure the stability of the detector. Please refer to the code for converting the AVA dataset to YOLO format. As for the format conversion of the ChaoticWorld dataset, we will provide that in the following section.
+- data: Due to the relatively limited dataset provided by ChaoticWorld, we recommend pretraining on **AVA v2.2** to ensure the stability of the detector. Please refer to the code for converting the AVA dataset to YOLO format. As for the format conversion of the ChaoticWorld dataset, we will provide that in the following section.
 
 
 You can easily configure the training environment through [ultralytics](https://docs.ultralytics.com/) or directly load our pre-trained weights [yolov8n_cw_epoch200.pt](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing ) for further detection.
