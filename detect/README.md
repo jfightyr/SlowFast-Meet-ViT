@@ -42,4 +42,10 @@ When using detect_cw_yolov8.py for inference, several key parameters need to be 
 - **img_root**: Ensure that this folder contains all the images needed for inference, and also ensure that the dimensions of the images stored here are consistent with the dimensions of our training models (640, 640). You can use `cw_csv2yolo.py` to get this folder.
 - **pkl_path**:  The output path for the `.pkl` file.
 
+## Detector Zoo
+Detector | Pre-train dataset | Train dataset | Stable | Best Val mAP 
+--- | :---: | :---: | :---: | :---: 
+`YOLOv8n` | None | Chaotic World | False | **26.62%** | 41.07%
+`YOLOv8n` | None | Chaotic World | False | **26.62%** | 41.07%
+`YOLOv8n` | None | Chaotic World | False | **26.62%** | 41.07%
 
