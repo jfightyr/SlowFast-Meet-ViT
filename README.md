@@ -28,12 +28,13 @@ Some key dependencies are listed below, while others are given in [`requirements
 - First, Complete **all the contents** in [Requirements](#Requirements), including environment configuration, checkpoints, data preparation, etc.
 
 - Inference：
+  - If you want to quickly reproduce our optimal results directly, please download our [predict.csv](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing ) first,replace the path in [ACAR-SF-VIT/multi_cap_mAP.py](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/ACAR-SF-VIT/multi_cap_mAP.py) to obtain.
 
-  Run the following code at the command line. Default values for arguments `nproc_per_node`, `backend` and `master_port` are `4`, `nccl` and `31114` respectively.
+  - Run the following code at the command line. Default values for arguments `nproc_per_node`, `backend` and `master_port` are `4`, `nccl` and `31114` respectively.
 
-  ```
-  python main.py --config ./configs/eval_VITSF_ACAR_HR2O_CW.yaml [--nproc_per_node N_PROCESSES] [--backend BACKEND] [--master_addr MASTER_ADDR] [--master_port MASTER_PORT]
-  ```
+    ```
+    python main.py --config ./configs/eval_VITSF_ACAR_HR2O_CW.yaml [--nproc_per_node N_PROCESSES] [--backend BACKEND] [--master_addr MASTER_ADDR] [--master_port MASTER_PORT]
+    ```
 - Train：
   - **Training from scratch**, see [preteained](https://github.com/jfightyr/Spatiotemporal-Action-Localization-on-Chaotic-World-dataset/blob/main/pretrained/README.md) for details:
 
