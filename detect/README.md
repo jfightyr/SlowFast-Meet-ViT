@@ -2,7 +2,7 @@
 We decompose the STAL task into two stages: object detection and action recognition. In the object detection stage, we use YOLOv8 as our object detector to detect human targets in video keyframes. Specifically, we use the official YOLOv8n as the pre-trained weights and train it on the ChaoticWorld training set. For details on data format conversion, please see the next part. The training configuration we use is as follows:
 
 - pretrained model: [YOLOv8n](https://github.com/ultralytics/assets/releases)
-- epoch: 200
+- epoch: 128
 - devices: 2 GeForce RTX 3090
 - batch: Automatic batch processing
 - imgsz: [320, 180]
