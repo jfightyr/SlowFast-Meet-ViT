@@ -5,7 +5,7 @@ manual_seed: 1
 print_freq: 20
 cap_min: 50
 cap_max: 2200
-resume_path: ./checkpoints/SFR50_VITG_ACAR_CWtrain_ckpt_11.pth.tar
+resume_path: ./checkpoints/SFR50_VITG_ACAR_CWtrain_ckpt_12.pth.tar
 
 model:
     freeze_bn: True
