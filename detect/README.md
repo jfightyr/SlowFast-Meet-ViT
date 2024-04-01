@@ -49,5 +49,5 @@ It's worth noting that all training data has been resized to **[320, 180]** dime
 Detector | Pre-train dataset | Train dataset | Stable | Recommended Threshold | Best Val mAP 
 --- | :---: | :---: | :---: | :---: | :---: 
 [`YOLOv8n_cw_ckpt128.pt`](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing) | None | Chaotic World | False | 0.3 | **26.62%** 
-[`yolov9e_AVA_cw_130.pt`](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing) | AVA 2.2v | Chaotic World | True | 0.3 |**/** 
+[`yolov9e_AVA_cw_130.pt`](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing) | AVA 2.2v | Chaotic World | True | 0.3 |**19.72%** 
 
