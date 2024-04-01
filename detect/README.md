@@ -50,5 +50,5 @@ Detector | Pre-train dataset | Train dataset | Stable | Recommended Threshold | 
 --- | :---: | :---: | :---: | :---: | :---: 
 [`YOLOv8n_cw_ckpt128.pt`](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing) | None | Chaotic World | False | 0.3 | **26.62%** 
 `YOLOv8n_AVA` | AVA 2.2v | Chaotic World | True | 0.3 | **/** 
-`YOLOv9e_AVA` | AVA 2.2v | Chaotic World | True | 0.3 |**/** 
+[`yolov9e_AVA_cw_130.pt`](https://drive.google.com/drive/folders/12JQYCU9fPKJvqqgFGpSm8egXygCwCh01?usp=sharing) | AVA 2.2v | Chaotic World | True | 0.3 |**/** 
 
